@@ -1,34 +1,162 @@
+html {
+    height: 100%;
+}
+
+a {
+    color: aquamarine;
+}
 body {
-    background-color: hsl(210, 46%, 95%);
+    width: 100%;
+    margin: 0;
+    padding-top: 8%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(180deg, #af67e9, #6565e7);
     font-weight: 500;
     font-family: "Barlow Semi Condensed", sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 3%;
+}
+
+h2 {
+    font-size: 3rem;
+    color:  hsl(237, 12%, 33%);
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.card {
+    margin-top: 280px;
+    padding:10%;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    margin-left: 12%;
+    border-radius: 40px;
+}
+.faq-accordion {
+    margin-left: 0%;
 }
 
 .accordion {
     background-color: white;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
     text-align: left;
+    color: hsl(240, 6%, 50%);
+    cursor: pointer;
+    padding-bottom: 30px;
+    width: 100%;
     border: none;
+    border-bottom: hsl(240, 5%, 91%);
     outline: none;
     transition: 0.4s;
     font-size: 20px;
     transition: 0.4s;
 }
 
+.arrow {
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+.attribution {
+    display: flex;
+    padding-top: 5%;
+    margin-left: 80px;
+}
 .active, .accordion:hover {
-    background-color: whitesmoke;
+    background-color: white;
+    padding-bottom: 0%;
+    color: hsl(237, 12%, 33%);
+}
+.box {
+    position: absolute;
+    top: 140px;
+    left: -30px;
+
+}
+
+.object {
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }
 
 .panel {
-    padding: 0 18px;
+    color: hsl(237, 12%, 33%);
     background-color: white;
+    padding-left: 1%;
+    line-height: 24px;
+    border-bottom: hsl(240, 5%, 91%);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    h2 {
+        display: flex;
+        margin-right: 8%;
+        font-size: 3rem;
+        color:  hsl(237, 12%, 33%);
+    }
+    .card {
+        padding:4%;
+        width: 60%;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-items: flex-end;
+        border-radius: 40px;
+    }
+    .faq-accordion {
+        margin-left: 40%;
+    }
+    
+    .accordion {
+        background-color: white;
+        text-align: left;
+        color: hsl(240, 6%, 50%);
+        cursor: pointer;
+        padding-bottom: 30px;
+        width: 100%;
+        border: none;
+        border-bottom: hsl(240, 5%, 91%);
+        outline: none;
+        transition: 0.4s;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    
+    .attribution {
+        display: flex;
+        padding-top: 5%;
+        justify-content: center;
+    }
+    .active, .accordion:hover {
+        background-color: white;
+        padding-bottom: 0%;
+        color: hsl(237, 12%, 33%);
+    }
+    .box {
+        position: absolute;
+        top: 346px;
+        left: 74px;
+    
+    }
+    
+    .object {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    .panel {
+        color: hsl(237, 12%, 33%);
+        background-color: white;
+        padding-left: 1%;
+        line-height: 24px;
+        border-bottom: hsl(240, 5%, 91%);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
 }
